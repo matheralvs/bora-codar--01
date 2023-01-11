@@ -1,5 +1,6 @@
 const wrapper = document.querySelector(".wrapper");
 const title = document.querySelector(".wrapper h1");
+const social = document.querySelector(".wrapper .social");
 
 // add a new audio
 const audio = new Audio("../assets/music.mp3");
@@ -59,6 +60,7 @@ audio.addEventListener("ended", () => {
   });
 
   title.classList.remove("hidden");
+  social.classList.add("hidden");
 });
 
 // update progressBar

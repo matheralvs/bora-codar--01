@@ -10,7 +10,7 @@
 :root {
   /* colors */
   --background: #121214;
-  --bg-card: #633bbc;
+  --bg-card: #7159c1;
   --content: #ffffff;
 }
 
@@ -18,9 +18,12 @@
   outline: 0;
 }
 
-button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -92,6 +95,7 @@ body {
   align-items: center;
   gap: 1.75rem;
   box-shadow: 0 0 35px 0 rgba(0, 0, 0, 25%);
+  border: 1px solid rgba(194, 166, 255, 0.5);
 }
 
 .leftPlayer img {
@@ -117,7 +121,7 @@ body {
 .info span {
   color: var(--content);
   opacity: 0.67;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1;
 }
@@ -142,7 +146,7 @@ body {
 }
 
 .controls button i {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: var(--content);
 }
 
@@ -199,6 +203,7 @@ body {
   align-items: center;
   gap: 1.75rem;
   box-shadow: 0 0 35px 0 rgba(0, 0, 0, 25%);
+  border: 1px solid rgba(194, 166, 255, 0.5);
 }
 
 .musicInfo {
@@ -212,4 +217,34 @@ body {
   width: 5.25rem;
   height: 5.25rem;
   border-radius: 6px;
+}
+
+.social {
+  width: 100%;
+  position: absolute;
+  top: calc(100% + 2rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--content);
+  opacity: 0;
+}
+
+.social.hidden {
+  opacity: 1;
+}
+
+.social a {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--content);
+
+  transition: color 0.2s ease;
+}
+
+.social a:hover {
+  color: var(--bg-card);
 }
