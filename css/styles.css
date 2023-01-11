@@ -230,6 +230,7 @@ body {
   gap: 1rem;
   color: var(--content);
   opacity: 0;
+  transition: opacity 0.2 ease;
 }
 
 .social.hidden {
