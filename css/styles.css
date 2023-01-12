@@ -95,6 +95,11 @@ body {
   gap: 1.75rem;
   box-shadow: 0 0 35px 0 rgba(0, 0, 0, 25%);
   border: 1px solid rgba(194, 166, 255, 0.5);
+  transition: transform 0.4s ease;
+}
+
+.leftPlayer:hover {
+  transform: translateY(-5px);
 }
 
 .leftPlayer img {
@@ -203,6 +208,13 @@ body {
   gap: 1.75rem;
   box-shadow: 0 0 35px 0 rgba(0, 0, 0, 25%);
   border: 1px solid rgba(194, 166, 255, 0.5);
+
+  transition: transform 0.4s ease;
+}
+
+.playerWithProgress:hover,
+.playerWithoutProgress:hover {
+  transform: translateY(-5px);
 }
 
 .musicInfo {
@@ -250,6 +262,10 @@ body {
 }
 
 @media (max-width: 645px) {
+  #granim-canvas {
+    display: none;
+  }
+
   .container {
     height: 100%;
     margin: 7rem auto;
